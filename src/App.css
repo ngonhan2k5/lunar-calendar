@@ -1,0 +1,65 @@
+/* .tennam {text-align:center; font-size:150%; line-height:120%; font-weight:bold; color:#000000; background-color: #CCCCCC}
+.thang {font-size: '+fontSize+'; padding:1; line-height:100%; font-family:Tahoma,Verdana,Arial; table-layout:fixed}
+.tenthang {text-align:center; font-size:125%; line-height:100%; font-weight:bold; color:#330033; background-color: #CCFFCC}
+.navi-l {text-align:center; font-size:75%; line-height:100%; font-family:Verdana,Times New Roman,Arial; font-weight:bold; color:red; background-color: #CCFFCC}
+.navi-r {text-align:center; font-size:75%; line-height:100%; font-family:Verdana,Arial,Times New Roman; font-weight:bold; color:#330033; background-color: #CCFFCC}
+.ngaytuan {width:14%; text-align:center; font-size:125%; line-height:100%; color:#330033; background-color: #FFFFCC}
+.ngaythang {background-color:#FDFDF0}
+.homnay {background-color:#FFF000}
+.tet {background-color:#FFCC99}
+.am {text-align:right;font-size:75%;line-height:100%;color:blue}
+.am2 {text-align:right;font-size:75%;line-height:100%;color:#004080}
+.t2t6 {text-align:left;font-size:125%;color:black}
+.t7 {text-align:left;font-size:125%;line-height:100%;color:green}
+.cn {text-align:left;font-size:125%;line-height:100%;color:red}
+
+body{background-color: #FFCC99} */
+
+sub {color:blue}
+  a:link {color: #0066cc; TEXT-DECORATION: none}
+  a:visited {color: #0066cc;  text-decoration:none; }
+  .tennam {text-align:center; font-size:150%; line-height:120%; font-weight:bold; color:#000000; background-color: #CCCCCC}
+  .thang {font-size: 11pt; padding:1; font-family:Tahoma,Verdana,Arial; table-layout:fixed}
+  .tenthang {text-align:center; font-size:125%; line-height:100%; font-weight:bold; color:#330033; background-color: #CCFFCC}
+  .navi-l {text-align:center; font-size:75%; line-height:100%; font-family:Verdana,Times New Roman,Arial; font-weight:bold; color:red; background-color: #CCFFCC}
+  .navi-r {text-align:center; font-size:75%; line-height:100%; font-family:Verdana,Arial,Times New Roman; font-weight:bold; color:#330033; background-color: #CCFFCC}
+  .ngaytuan {width:14%; text-align:center; font-weight:bold; font-size:110%; line-height:100%; color:#330033; background-color: #FFFFCC}
+  .ngaythang {background-color:#FDFDF0}
+  .homnay {background-color:#FFF000}
+  .tet {background-color:#FFCC99}
+  .am {text-align:right;font-size:80%;line-height:80%;color:blue}
+  .am2 {text-align:right;font-size:80%;line-height:80%;color:#004080}
+  .t2t6 {text-align:left;font-size:110%;color:black}
+  .t7 {text-align:left;font-size:110%;line-height:100%;color:green}
+  .cn {text-align:left;font-size:110%;line-height:100%;color:red}
+  .thangduong{text-align:center;font-size:150%; font-weight:bold; color:#330033; background-color: #CCFFCC}
+  .ngayduong{text-align:center;font-size:400%;font-weight:bold}
+  .thuduong{text-align:center;font-size:125%;font-weight:bold; text-decoration:underline}
+  .thangam{text-align:center;font-size:80%;color:black}
+  .ngayam{text-align:center;font-size:160%;color:black}
+  .gioam{text-align:center;font-size:80%;color:black}
+  .canchi {vertical-align:top}
+  .normal {vertical-align:top; line-height:100%}
+  .hoangdao {font-size:80%}
+  .info{text-align:center;font-size:100%;color:#FF33CC}
+
+
+  a {
+    line-height: 30px;
+    height: 30px;
+    display: inline-block;
+  }
+  table{
+    width: 420px;
+  }
+
+  h1{
+    font-size: 1em
+  }
+
+  @media only screen and (max-width: 600px) {
+    table{
+      width: 100%;
+    }
+  }
+  
