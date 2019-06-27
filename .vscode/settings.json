@@ -1,0 +1,36 @@
+{
+    "deploy": {
+        "packages": [
+            {
+                "name": "Version 2.3.4",
+                "description": "react-lunar-calendar",
+                "files": [
+                    "./public/**"
+                ],
+                "exclude": [
+                    "__mocks__",
+                    "node_modules",
+                    "coverage",
+                    
+                ],
+                "deployOnSave": true
+            },
+            {
+                "name": "Version 2.3.5 (anything)",
+                "description": "Package version 2.3.5"
+            }
+        ],
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "Freedom",
+                "description": "A SFTP folder",
+
+                "dir": "/opt/amlich",
+                "host": "27.120.89.10", "port": 3843,
+                "user": "cnn", "password": "anything",
+                "agent": "pageant"
+            }
+        ]
+    }
+}

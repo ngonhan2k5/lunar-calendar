@@ -15,11 +15,12 @@ class Page extends Component{
         // this.monthData = Utils.getSelectedMonth()
         // console.log(222,props.match.params)
         var d = props.match.params,
-        selectDate = d.syear?{sday:parseInt(d.sday), smonth:parseInt(d.smonth), syear:parseInt(d.syear)}:null
+        selectDate = d.syear?{sday:parseInt(d.sday), smonth:parseInt(d.smonth), syear:parseInt(d.syear)}:null,
+        selectMonth = d.syear?{mm:parseInt(d.smonth),yy:parseInt(d.syear)}: Utils.getSelectedMonth()
 
         // console.log(222,selectDate)
         this.state = {
-            selectedMonth: Utils.getSelectedMonth(),
+            selectedMonth: selectMonth,
             selectedDate: selectDate//Utils.getDateInfo()
         }
         this.actions={onNaviClick: this.onNaviClick.bind(this), onSelectedDateChange : this.onSelectedDateChange.bind(this)};

@@ -1,11 +1,14 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const {GenerateSW, InjectManifest} = require('workbox-webpack-plugin');
+
 module.exports = {
     entry: "./src/main.js",
     output: {
-        path: path.join(__dirname, '/bundle'),
-        filename: 'index_bundle.js'
+        path: path.join(__dirname, 'dist', '/public'),
+        publicPath: '/',
+        filename: 'bundle.js'
     },
     devServer: {
         inline: true,
@@ -30,8 +33,22 @@ module.exports = {
         ]
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     template: './index.html'
-        // })
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        }),
+        // new GenerateSW({
+        //     // "importWorkboxFrom": "local",
+        //     // "globDirectory":"dist/public",
+        //     "swDest": "sw.js",
+        //     'navigateFallback':'/index.html',
+        //     // 'globPatterns': ["**/*.{js,html,png}"],
+        //     // "globIgnores": [
+        //     //     "../workbox-cli-config.js",
+            
+        //     //   ]
+        // }),
+        // new InjectManifest({
+        //     swSrc: 'sw.js',
+        //   })
     ]
 }

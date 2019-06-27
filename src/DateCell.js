@@ -47,7 +47,8 @@ class DateCell extends Component{
         
         this.alertDayInfo = function(e){
             var that = this
-            return (lunarDate !=null) && this.props.click(solarDate, solarMonth, solarYear)
+            e.preventDefault()
+            return (lunarDate !=null) && this.props.click(solarDate, solarMonth, solarYear) && false
             //Utils.showDayInfo(e.currentTarget, lunarDate.day, lunarDate.month, lunarDate.year, lunarDate.leap,
             //    lunarDate.llen, lunarDate.jd, solarDate, solarMonth, solarYear   )
         }
@@ -55,7 +56,7 @@ class DateCell extends Component{
         return (
             
         <td className={cellClass} id={'cell'+ id} title={title} onClick={this.alertDayInfo} >
-            <div style={{color:solarColor}} className={solarClass}>{solarDate}</div> 
+            <div style={{color:solarColor}} className={solarClass}><a onClick={()=>false} href={`/${solarYear}/${solarMonth}/${solarDate}`}>{solarDate}</a></div> 
             <div className={lunarClass}>{lunar}</div>
         </td>
         
