@@ -13,7 +13,7 @@ module.exports = {
     devServer: {
         inline: true,
         port: 8080,
-        historyApiFallback: {index: 'index.html'}
+        historyApiFallback: true
     },
     module: {
         rules: [
