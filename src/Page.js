@@ -13,7 +13,7 @@ class Page extends Component{
         super()
         
         // this.monthData = Utils.getSelectedMonth()
-        // console.log(222,props.match.params)
+        console.log(222,props.match.params)
         var d = props.match.params,
         selectDate = d.syear?{sday:parseInt(d.sday), smonth:parseInt(d.smonth), syear:parseInt(d.syear)}:null,
         selectMonth = d.syear?{mm:parseInt(d.smonth),yy:parseInt(d.syear)}: Utils.getSelectedMonth()
