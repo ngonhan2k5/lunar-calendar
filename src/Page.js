@@ -43,8 +43,7 @@ class Page extends Component{
         this.setState(Object.assign({}, this.state, {selectedDate: selectedDate }) )
         this.props.history.push('/'+solarYear+'/'+solarMonth+'/'+solarDate)
         if (typeof ga!== 'undefined'){
-            ga('set', 'page', '/'+solarYear+'/'+solarMonth+'/'+solarDate);
-            ga('send', 'pageview');
+            ga('send', 'pageview', location.pathname);
         }
     }
     
