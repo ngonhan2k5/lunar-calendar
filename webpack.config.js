@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {GenerateSW, InjectManifest} = require('workbox-webpack-plugin');
 
 module.exports = {
-    entry: "./src/main.js",
+    devtool: 'eval-source-map',
+    entry: "./src/client/main.js",
     output: {
         path: path.join(__dirname, 'dist', '/public'),
         publicPath: '/',

@@ -1,0 +1,151 @@
+div.memo-list {
+    /* width: 200px; */
+    margin: 0px;
+  }
+  
+  /* h2 {
+    font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    font: 200 16px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border: none;
+  }
+  
+  li a {
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+    /* width: 200px; */
+  }
+  
+  li a:hover {
+    font-size: 24px;
+    /* background: #f6f6f6; */
+  }
+  
+  li.selected {
+    background-color: #FFF000;
+  }
+
+
+/* add button */
+/* .main-hr {
+  width: 30%;
+  border: none;
+  border-top: 1px solid #c3c3c3;
+} */
+a .icon-btn {
+  display: none;
+}
+a:hover .icon-btn {
+  display: inline;
+}
+.icon-btn {
+  width: 26px;
+  height: 25px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  line-height: 25px;
+  top: -1px;
+  margin-left:4px;
+}
+.add-btn:hover {
+  width: 80px;
+}
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 12px;
+  top: calc(50% - 2px);
+  background: red;
+}
+.add-btn::after {
+  right: 7px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.add-btn::before {
+  left: 7px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.icon-btn:focus {
+  outline: none;
+}
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 2px;
+  top: calc(50% - 7px);
+  background: red;
+  overflow: hidden;
+}
+.add-icon::before {
+  left: 12px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+}
+.add-icon::after {
+  right: 12px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+.add-btn:hover .add-icon::before {
+  left: 8px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+.add-btn:hover .add-icon::after {
+  right: 8px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+
+.head {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 4px;
+}

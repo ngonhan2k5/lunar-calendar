@@ -13,10 +13,11 @@
           <!-- anchor linking to external file -->
           <a href="/noscript">no script support device go here</a>
         </noscript>
+        <div id="popupContainer"></div>
     <script type="text/javascript" src="/bundle.js"></script></body>
     <script>
             // Check that service workers are registered
-            if ('serviceWorker' in navigator) {
+            if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
               // Use the window load event to keep the page load performant
               window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js');
