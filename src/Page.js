@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 
 import MonthTable from './MonthTable.js'
 import DateTable from './DateTable'
@@ -52,7 +52,7 @@ class Page extends Component{
         return (
             <div className="application">
 
-                <h1><a href="/">Lunar Calendar - ReactJs</a></h1>
+                <h1><Link to="/">Lunar Calendar - ReactJs</Link></h1>
                 
                 <table >
                     <thead>
