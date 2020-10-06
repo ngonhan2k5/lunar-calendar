@@ -42,8 +42,8 @@ class Page extends Component{
         var selectedDate = {sday:solarDate, smonth:solarMonth, syear:solarYear}
         this.setState(Object.assign({}, this.state, {selectedDate: selectedDate }) )
         this.props.history.push('/'+solarYear+'/'+solarMonth+'/'+solarDate)
-        if (typeof ga!== 'undefined'){
-            ga('send', 'pageview', location.pathname);
+        if (typeof gaId !== 'undefined' && typeof gtag !== 'undefined'){
+            gtag('config', gaId, { 'page_path': '/'+solarYear+'/'+solarMonth+'/'+solarDate });
         }
     }
     
