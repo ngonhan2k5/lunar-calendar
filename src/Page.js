@@ -52,7 +52,7 @@ class Page extends Component{
         return (
             <div className="application">
 
-                <h1>Lunar Calendar - ReactJs</h1>
+                <h1><a href="/">Lunar Calendar - ReactJs</a></h1>
                 
                 <table >
                     <thead>
